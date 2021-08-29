@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Bootstrap Enviourment Setup</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg navbar-light nav-header">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo fw-bold" href="index.html">Jquery</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="widget.html">Widgets</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="effect.html">Effects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Utilities</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me</a>
+                      </li>
+                     
+                    </ul>
+                    <div class="mood">
+                      <button class="btn btn-dark" id="mBtn1" onclick="darkMood()">Dark Mood</button>
+                      <button class="btn btn-light shadow" id="mBtn2" onclick="lightMood()">Normal Mood</button>
+                      </div>
+                    
+                  </div>
+                </div>
+              </nav>
+            <!-- navbar end -->
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="wrapper1 text-center">
+                <h1 class="bg-info py-3 " id="dHead">Jqeury practice start from here</h1>
+            </div>
+            <div class="wrap2 text-center">
+                <h1 class="bg-dark text-light">Accordion creat with jquery</h1>
+
+                <div class="pannel" id="aPannel" onclick="changeBg()">
+                    <h2>Accordion One</h2>
+                </div>
+                <div class="flip">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eius molestias reprehenderit temporibus, hic sit exercitationem vitae pariatur dolorem aliquid dolore laborum. Placeat fuga at iste quisquam deserunt facilis, itaque officiis voluptatem alias suscipit harum atque quod nostrum autem commodi accusantium temporibus. Consequuntur fugit voluptatum assumenda provident nemo ab ex.</p>
+                </div>
+                <div class="pannel" id="aPannel" onclick="changeBg()">
+                    <h2>Accordion Two</h2>
+                </div>
+                <div class="flip flip2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eius molestias reprehenderit temporibus, hic sit exercitationem vitae pariatur dolorem aliquid dolore laborum. Placeat fuga at iste quisquam deserunt facilis, itaque officiis voluptatem alias suscipit harum atque quod nostrum autem commodi accusantium temporibus. Consequuntur fugit voluptatum assumenda provident nemo ab ex.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="wrap3 text-center mt-4">
+                <h1 id="dHead" class=" bg-dark py-2">Click the button to show fadeIn & fadeOut the content</h1>
+                <button class="btn btn-outline-danger" id="btn1">FadeIn</button>
+                <button class="btn btn-outline-secondary" id="btn2">FadeOut</button>
+                <button class="btn btn-outline-primary" id="btn3">FadeToggle</button>
+                <div class="box1" id="bOne"></div>
+                <div class="box1" id="bTwo"></div>
+                <div class="box1" id="bThree"></div>
+            </div>
+
+
+            <div class="wrap4 text-center">
+                <h1 id="dHead" class=" bg-dark py-2">Click the button to slide the imgage</h1>
+                <button class="btn btn-outline-success" id="btn4">Slide Down</button>
+                <button class="btn btn-outline-warning" id="btn5">Slide Up</button>
+                <p class="text py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ab, voluptas accusamus debitis iste rerum! Nisi illo veniam eveniet provident! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste laborum id accusamus quibusdam quia praesentium natus perspiciatis, laboriosam, blanditiis deserunt commodi quis veniam voluptatem unde dolore. Voluptatibus architecto sequi corporis nesciunt debitis, suscipit vitae libero. Labore sapiente soluta iste, sed numquam ab asperiores exercitationem consequatur molestiae nostrum excepturi unde ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus!</p>
+               
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="wrap5 text-center mt-4">
+                <h1 id="dHead" class=" bg-dark py-2">Click the btn to show alert</h1>
+                <button class="btn btn-info" id="btn6">Show Alert</button>
+
+            </div>
+            
+
+            <div class="wrap6 text-center mt-4">
+              <h1 class=" bg-dark py-2">Click the button to change the text</h1>
+              <h2 class="" id="subHead">Hello SSB</h2>
+              <button class="btn btn-secondary" id="btn7">Change Text</button>
+              <button class="btn btn-danger" id="btn8">Refresh</button>
+
+            </div>
+            <div class="wrap7 text-center mt-4">
+              <h1 class=" bg-dark py-2">Click the button to change the Color</h1>
+              <h2 class="" id="subHead2">Change Color</h2>
+              <button class="btn btn-secondary" id="btn9">Change Color</button>
+              <button class="btn btn-danger" id="btn10">Refresh</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="f-content">
+              <p class="mb-0">&copy;All right reserved 2021.Mohammad Rahat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+    
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>
